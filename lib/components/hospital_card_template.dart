@@ -27,12 +27,13 @@ class HospitalPharmacyCardTemplate extends StatelessWidget {
             Image.asset('images/hospital_template.png'),
             Container(
               decoration: kHospitalsBoxDecoration,
-              margin: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
+              margin: EdgeInsets.only(left: 10, right: 10, bottom: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
                         children: [
