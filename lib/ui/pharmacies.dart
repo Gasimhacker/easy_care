@@ -40,16 +40,20 @@ class _PharmaciesState extends State<Pharmacies> {
             ),
             Flexible(
               child: ListView(children: const [
-                HospitalCardTemplate(),
+                HospitalPharmacyCardTemplate(
+                    hospitalPharmacy: 'Bahri Pharmacy',
+                    hospitalPharmacyLocation: 'Bahri,Al Said Ali Merghani'),
                 SizedBox(height: 30),
-                HospitalCardTemplate(),
+                HospitalPharmacyCardTemplate(
+                    hospitalPharmacy: 'Omdurman Pharmacy',
+                    hospitalPharmacyLocation: 'Khartoum,Buri'),
                 SizedBox(height: 30),
-                HospitalCardTemplate(),
+                HospitalPharmacyCardTemplate(
+                    hospitalPharmacy: 'Khartoum Pharmacy',
+                    hospitalPharmacyLocation: 'Khartoum,Buri'),
                 SizedBox(
                   height: 30,
                 ),
-                HospitalCardTemplate(),
-                SizedBox(height: 30),
               ]),
             ),
           ],

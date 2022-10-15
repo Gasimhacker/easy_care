@@ -4,10 +4,14 @@ import 'package:easy_care/ui/categories.dart';
 import 'package:easy_care/components/login_register_button.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class HospitalCardTemplate extends StatelessWidget {
-  const HospitalCardTemplate({
+class HospitalPharmacyCardTemplate extends StatelessWidget {
+  const HospitalPharmacyCardTemplate({
     super.key,
+    required this.hospitalPharmacy,
+    required this.hospitalPharmacyLocation,
   });
+  final String hospitalPharmacy;
+  final String hospitalPharmacyLocation;
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +27,7 @@ class HospitalCardTemplate extends StatelessWidget {
             Image.asset('images/hospital_template.png'),
             Container(
               decoration: kHospitalsBoxDecoration,
-              margin: EdgeInsets.only(left: 10, right: 10, bottom: 10),
+              margin: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -31,17 +35,17 @@ class HospitalCardTemplate extends StatelessWidget {
                   Column(
                     children: [
                       Row(
-                        children: const [
-                          Icon(
+                        children: [
+                          const Icon(
                             FontAwesomeIcons.handHoldingMedical,
                             color: kThemeColor,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
                           Text(
-                            'Bahri Hospital',
-                            style: TextStyle(
+                            hospitalPharmacy,
+                            style: const TextStyle(
                                 fontSize: 13, fontWeight: FontWeight.w500),
                           )
                         ],
@@ -50,16 +54,16 @@ class HospitalCardTemplate extends StatelessWidget {
                         height: 10,
                       ),
                       Row(
-                        children: const [
-                          Icon(
+                        children: [
+                          const Icon(
                             Icons.place,
                             color: kThemeColor,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
                           Text(
-                            'Khartoum,Buri',
+                            hospitalPharmacyLocation,
                             style: kLocationTextStyle,
                           )
                         ],

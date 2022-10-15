@@ -14,18 +14,18 @@ class Categories extends StatelessWidget {
         padding: const EdgeInsets.all(20),
         child: ListView(
           children: [
-            Center(
+            const Center(
               child: Text(
                 'Hospital Name',
                 style: kNameTextStyle,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
+              children: const [
                 CategoryIconButton(
                     icon: Icon(
                   FontAwesomeIcons.solidHeart,
@@ -43,12 +43,12 @@ class Categories extends StatelessWidget {
                 )),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
+              children: const [
                 CategoryIconButton(
                     icon: Icon(
                   FontAwesomeIcons.tooth,
@@ -66,12 +66,12 @@ class Categories extends StatelessWidget {
                 )),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
+              children: const [
                 CategoryIconButton(
                     icon: Icon(
                   FontAwesomeIcons.baby,

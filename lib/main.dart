@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
           SignUpScreen.id: (context) => const SignUpScreen(),
           Categories.id: (context) => const Categories(),
         },
-        initialRoute: PatientMainScreen.id,
+        initialRoute: LoginScreen.id,
         debugShowCheckedModeBanner: false,
       ),
     );
